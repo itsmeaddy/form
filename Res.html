@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .b{
+           align-self: center;
+        }
+        .a{
+            margin-left:50px;
+            margin-right:50px;
+            padding-left:50px;
+            padding-right:50px;
+        }
+        label{
+            margin:5px;
+            padding:5px;
+            align-items:end;
+        }
+        @media only screen and (max-width: 1000px) {
+            .a{
+                margin:10px;
+                padding:10px;
+            }
+            .b{
+                position: absolute;
+                left:100px;
+            }
+        }
+    </style>
+</head>
+
+<body class="b">
+    <form>
+        <label>Firstname :</label>
+        <input type="text" placeholder="firstname" class="a"><br>
+        <label>Lastname :</label>
+        <input type="text" placeholder="lastname" class="a"><br>
+        <label>Email :</label>
+        <input type="email" placeholder="Email" class="a"><br>
+        <label>Gender :</label>
+        <input type="text" placeholder="Gender" class="a"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
